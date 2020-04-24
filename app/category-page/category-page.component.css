@@ -1,0 +1,29 @@
+.product-style-image {
+    background: #f6f6f6;
+    object-fit: contain;
+    margin-right: 24px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    cursor: pointer;
+    margin-left: 6px;
+}
+.list-title {
+    font-weight: bold;
+    margin-left: 36px;
+    font-size: 18px;
+    display: inline;
+    text-align: left;
+    left: 35px;
+    white-space: nowrap;
+}
+.list-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 4.5;
+    font-weight: bold;
+    text-transform: uppercase;
+}

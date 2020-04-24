@@ -1,0 +1,26 @@
+<ng-container *ngIf="data.isHeaderVisible()">
+    <h1>{{ data.text }}</h1>
+</ng-container>
+<nav mat-tab-nav-bar *ngIf="data.areTabsVisible()">
+    <a
+        mat-tab-link
+        *ngFor="let tab of data.getTabs()"
+        (click)="processLink(tab.link)"
+        [active]="tab.active"
+    >
+        {{ tab.text }}
+    </a>
+</nav>
+<ng-container *ngFor="let item of data.getItems()">
+    <a
+        (click)="processLink(item.link)"
+        class="list-item"
+        fxLayout="row"
+        fxLayoutAlign="space-between center"
+    >
+        <p class="list-title">
+            {{ item.title.text }}
+        </p>
+        <img src="{{ item.image }}" alt="" class="product-style-image" />
+    </a>
+</ng-container>
